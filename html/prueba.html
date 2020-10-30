@@ -1,7 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <title>Reproductor de video interactivo</title>
     <meta charset="utf-8">
     <link rel="icon" href="../recursos/mano.ico">
+    <link rel="stylesheet"  href="C:\\Users\\Usuario\\Desktop\\AQUI\\MULTIMEDIA\\css\\reroductor.css">
+    <script src="C:\\\Users\\Usuario\\Desktop\\AQUI\\MULTIMEDIA\\js\\reproductor.js"></script>
 </head>
+
+<body>
+    <section id="reproductor">
+        <h1>Reproductor de video interactivo</h1>
+        <p><b>Mi video</b>:</p>
+        <video  controls id="medio" width="720" higth="400">
+            <source src="C:\Users\Usuario\Desktop\AQUI\MULTIMEDIA\recursos\Video.mp4" type="video/mp4"> 
+        </video>
+        <nav>
+            <div id="botones">
+                <button type="button" id="reproducir">Reproducir</button>
+            </div>
+            <div id="barra">
+                <div id="progreso"></div>
+            </div>
+            <div style="clear: both"></div>
+        </nav>
+    </section>
+</body>

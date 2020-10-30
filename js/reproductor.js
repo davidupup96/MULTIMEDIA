@@ -3,10 +3,10 @@ function iniciar(){
     medio=document.getElementById('medio');
     reproducir=document.getElementById('reproducir');
     barra=document.getElementById('barra');
-    progreso=document.getElementById('barra');
+    progreso=document.getElementById('progreso');
 
-    reproducir.addEventListener('click',presionar,false)
-    bara.addEventListener('click',mover,false)
+    reproducir.addEventListener('click',presionar,false);
+    bara.addEventListener('click',mover,false);
 }
 
 function presionar(){
