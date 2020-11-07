@@ -4,17 +4,30 @@
         <title>Reproductor de video interactivo</title>
         <meta charset="utf-8">
         <link rel="icon" href="../recursos/mano.ico">
-        <script type="text/javascript" src="../recursos/data.json"></script>
-        <script src="../js/prueba.js"></script>
+        <script src="../js/reproductor.js"></script>
     </head>
     <body>
+        
         <h1>Mi reproductor de video</h1>
-        <video  controls withd="320" height="240" id="video1">
+        <video controls withd="720" height="400" id="medio" >
             <source src="../recursos/Video.mp4" type="video/mp4">
         </video>
-        <div>
-            <button type="button" id="Mostrar Json">Mostrar Json</button>
-        </div>
+        <nav>
+            <section>
+                <form name="miformulario" id="miformulario" method="get">
+                    <input type="url" name="miurl" id="miurl"> 
+                    <input type="submit" value="Buscar en YouTube">
+                </form>
+            </section> 
+            <div id ="botones">
+                <button type="button" id="reproducir">Reproducir</button> 
+                <button type="button" id="asesinar">Asesinar</button>
+            </div>
+            <div id="barra">
+                <div id="progreso"></div>
+                </div>
+                <div style="clear: both"></div> 
+        </nav>
     </body>
 </html>
     

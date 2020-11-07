@@ -1,9 +1,11 @@
 body{
     text-align: center;
 }
-
+header, section, footer, aside, nav, article, figure, figcaption,hgroup{
+    display : block;
+}
 #reproductor{
-    width:720px;
+    width: 720px;
     margin: 20px auto;
     padding: 5px;
     background: #999999;
@@ -12,29 +14,26 @@ body{
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
-
-#botones{
-    float:left;
-    width: 100px;
-    height: 15px;
+nav{
+    margin: 5px 0px;
 }
-
+#botones{
+    float: left;
+    width: 100px;
+    height: 20px;
+}
 #barra{
     position: relative;
     float: left;
     width: 600px;
-    height: 8px;
+    height: 16px;
     padding: 2px;
+    border: 1px solid #CCCCCC;
     background: #EEEEEE;
-    border:1px solid #CCCCCC;
 }
-
 #progreso{
     position: absolute;
-    width:0px;
-    height: 8px;
-    background: rgba(0,0,255,.9);
-}
-#reproducir{
-    height: 20px;
+    width: 0px;
+    height: 16px;
+    background: rgba(0,0,150,.2);
 }

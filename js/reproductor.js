@@ -1,23 +1,27 @@
-function iniciar(){
+function iniciar() {
     maximo=600;
+    // esto permite almacenar las variables usadas en HTML
     medio=document.getElementById('medio');
     reproducir=document.getElementById('reproducir');
-    barra=document.getElementById('barra');
+    barra=document.getElementById('barra'); 
     progreso=document.getElementById('progreso');
+   
+    // esto permite escuchar los eventos que se realicen a lo largo de la interaccion
+    reproducir.addEventListener('click', presionar, false);
+    barra.addEventListener('click', mover, false);
 
-    reproducir.addEventListener('click',presionar,false);
-    bara.addEventListener('click',mover,false);
+    bucle=setInterval(asesina, 1100);
 }
 
 function presionar(){
-    if(!medio.paused && !medio.ended){
+    if(!medio.paused && !medio.ended) {
         medio.pause();
         reproducir.innerHTML='Reproducir';
         window.clearInterval(bucle);
     }else{
         medio.play();
         reproducir.innerHTML='Pausa';
-        bucle=serInterval(estado, 1000);
+        bucle=setInterval(estado, 1000);
     }
 }
 
@@ -29,7 +33,6 @@ function estado(){
         progreso.style.width='0px';
         reproducir.innerHTML='Reproducir';
         window.clearInterval(bucle);
-        
     }
 }
 
@@ -41,4 +44,16 @@ function mover(e){
         progreso.style.width=ratonX+'px';
     }
 }
-window.addEventListener('load',iniciar,false);
+
+ function asesina(){
+    if(medio.currentTime>3){
+        medio.currentTime=medio.currentTime-1;
+    }
+ }
+//esta funcion permite coger la url de youtube
+ function youtube(){
+
+
+ }
+
+window.addEventListener('load', iniciar, false);
