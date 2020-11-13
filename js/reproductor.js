@@ -10,7 +10,7 @@ function iniciar() {
     reproducir.addEventListener('click', presionar, false);
     barra.addEventListener('click', mover, false);
 
-    bucle=setInterval(asesina, 1100);
+    //bucle=setInterval(asesina, 1100);
 }
 
 function presionar(){
@@ -57,3 +57,5 @@ function mover(e){
  }
 
 window.addEventListener('load', iniciar, false);
+//como hacemos para añadir subtitulos,
+//

@@ -5,12 +5,18 @@
         <meta charset="utf-8">
         <link rel="icon" href="../recursos/mano.ico">
         <script src="../js/reproductor.js"></script>
+        <link rel="stylesheet" href="../css/reproductor.css" />
     </head>
     <body>
         
-        <h1>Mi reproductor de video</h1>
+        <header>
+            <h1>Mi reproductor de video</h1>
+        </header>
+
         <video controls withd="720" height="400" id="medio" >
-            <source src="../recursos/Video.mp4" type="video/mp4">
+            <source src="../recursos/videos/Video.mp4" type="video/mp4">
+                <track kind="subtitles" src="../otros/subtitulos.vtt" lang="es" label="Español" default>
+                <track kind="subtitles" src="../otros/subtitulos.vtt" lang="en" label="Inglés">
         </video>
         <nav>
             <section>
@@ -20,13 +26,17 @@
                 </form>
             </section> 
             <div id ="botones">
-                <button type="button" id="reproducir">Reproducir</button> 
-                <button type="button" id="asesinar">Asesinar</button>
+                <button type="button" id="reproducir">Reproducir</button>
+                <form name="formulario" method="post" action="../../form-result.php" enctype="multipart/form-data">
+                    
+                    <input type="file" name="VideoAReproducirr" accept="video/.mp4" multiple />
+                </form>
+                <!--<button type="button" id="asesinar">Asesinar</button>-->
             </div>
             <div id="barra">
                 <div id="progreso"></div>
-                </div>
-                <div style="clear: both"></div> 
+            </div>
+            <div style="clear: both"></div> 
         </nav>
     </body>
 </html>

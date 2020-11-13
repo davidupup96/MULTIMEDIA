@@ -2,8 +2,8 @@
     "subtitulo":{
         "type": "SUPEROPOSICION",
         "style": {
-            "top": 53,
-            "left": 747,
+            "start": 53,
+            "end": 747,
             "width": "60px",
             "height": "60px",
             "visibility": "seen",

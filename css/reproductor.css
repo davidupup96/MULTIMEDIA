@@ -1,7 +1,19 @@
 body{
     text-align: center;
+    background: rgb(204, 232, 241);
+    font-family: Arial, Helvetica, sans-serif;
 }
-header, section, footer, aside, nav, article, figure, figcaption,hgroup{
+
+header{
+    display: block;
+    background: rgb(165, 214, 245);
+    height: 100px;
+    margin: 10px;
+    line-height: 100px;
+    color: black;
+}
+
+section, footer, aside, nav, article, figure, figcaption,hgroup{
     display : block;
 }
 #reproductor{
