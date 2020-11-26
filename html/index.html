@@ -5,39 +5,54 @@
         <meta charset="utf-8">
         <link rel="icon" href="../recursos/mano.ico">
         <script src="../js/reproductor.js"></script>
-        <link rel="stylesheet" href="../css/reproductor.css" />
+        <link rel="stylesheet" type="text/css" href="../css/reproductor.css" />
     </head>
     <body>
-        
         <header>
             <h1>Mi reproductor de video</h1>
         </header>
-
-        <video controls withd="720" height="400" id="medio" >
-            <source src="../recursos/videos/Video.mp4" type="video/mp4">
-                <track kind="subtitles" src="../otros/subtitulos.vtt" lang="es" label="Español" default>
-                <track kind="subtitles" src="../otros/subtitulos.vtt" lang="en" label="Inglés">
-        </video>
-        <nav>
-            <section>
-                <form name="miformulario" id="miformulario" method="get">
-                    <input type="url" name="miurl" id="miurl"> 
-                    <input type="submit" value="Buscar en YouTube">
-                </form>
-            </section> 
-            <div id ="botones">
-                <button type="button" id="reproducir">Reproducir</button>
-                <form name="formulario" method="post" action="../../form-result.php" enctype="multipart/form-data">
-                    
-                    <input type="file" name="VideoAReproducirr" accept="video/.mp4" multiple />
-                </form>
-                <!--<button type="button" id="asesinar">Asesinar</button>-->
+        <div class="wrapper">
+            
+            <div class="video-wrapper" >
+                <video controls id="medio" >
+                    <source src="../recursos/videos/Video.mp4" type="video/mp4">
+                        <track kind="subtitles" src="../otros/subtitulos.vtt" lang="es" label="Español" default>
+                        <track kind="subtitles" src="../otros/subtitulos.vtt" lang="en" label="Inglés">
+                </video>
             </div>
-            <div id="barra">
-                <div id="progreso"></div>
-            </div>
-            <div style="clear: both"></div> 
-        </nav>
+            
+            <nav>
+                <section>
+                    <form name="miformulario" id="miformulario" method="get">
+                        <input type="url" name="miurl" id="miurl"> 
+                        <input type="submit" value="Buscar en YouTube">
+                    </form>
+                </section> 
+                <div id ="botones">
+                    <button type="button" id="reproducir">Reproducir</button>
+                    <form name="formulario" method="post" action="../../form-result.php" enctype="multipart/form-data">
+                        
+                        <input type="file" name="VideoAReproducirr" accept="video/.mp4" multiple />
+                    </form>
+                    <!--<button type="button" id="asesinar">Asesinar</button>-->
+                </div>
+                <div id="barra">
+                    <div id="progreso"></div>
+                </div>
+                <div style="clear: both"></div> 
+            </nav>
+        </div>
+        <footer>
+            <ul class="logos">
+                <li>
+                    <a href="https://esi.uclm.es" target="_blank"><img src="../recursos/logos/logoesi.jpg" alt="Logo esi" tittle="ESI UCLM" height="150px" width="475px"> </a>
+                </li>
+                <li>
+                    <a href="https://www.uclm.es" target="_blank"><img src="../recursos/logos/logouclm.jpg" alt="Logo esi" tittle="UCLM" height="150px" width="240"> </a>
+                </li>
+            </ul>
+        </footer>
+        
     </body>
 </html>
     
