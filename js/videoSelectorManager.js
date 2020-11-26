@@ -6,7 +6,6 @@ videoSelectoManagerJS={
         var mainVideo = document.getElementById("mainVideo");
         //guarda el elemento del video que queremos reemplazar
         var replacementVideo = document.getElementById(replaceVideoId);
-
         //sacamos src de nuevo video seleccionado
         var srcReplaceVideo = replacementVideo.src;
         //cambia el src al nuevo video
