@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <link rel="icon" href="../recursos/mano.ico">
         <script src="../js/reproductor.js"></script>
+        <script src="../js/videoSelectorManager.js"></script>
         <link rel="stylesheet" type="text/css" href="../css/reproductor.css" />
     </head>
     <body>
@@ -14,23 +15,25 @@
         <div class="wrapper">
             
             <div class="video-wrapper" >
-                <video controls id="medio" >
-                    <source src="../recursos/videos/Video.mp4" type="video/mp4">
-                        <track kind="subtitles" src="../otros/subtitulos.vtt" lang="es" label="Español" default>
-                        <track kind="subtitles" src="../otros/subtitulos.vtt" lang="en" label="Inglés">
+                <video controls id="mainVideo" src="../recursos/videos/Video.mp4">
                 </video>
             </div>
-            <div class="videoselector">
-                <form >
-                    Video:<br>
-                    <input type="radio" name="video1">video 1</imput>
-                    <input type="radio" name="video1">video 2</imput>
-                    <input type="radio" name="video1">video 3</imput>
-                    <input type="submit" value="select"> 
-                </form>
-
-            </div>
             
+            <div id="video-colection">
+                <a href="#" onclick="videoSelectoManagerJS.playThisVideo('video1')">
+                    <video id="video1" class="video-list"  src="../recursos/videos/Video.mp4#t=0.5">
+                    </video>
+                </a>
+                <a href="#" onclick="videoSelectoManagerJS.playThisVideo('video2')">
+                    <video id="video2" class="video-list" poster="placeholder.png" src="../recursos/videos/I, Phone.mp4#t=0.5">
+                    </video>
+                </a>
+                <a href="#" onclick="videoSelectoManagerJS.playThisVideo('video3')">
+                    <video id="video3" class="video-list" poster="placeholder.png" src="../recursos/videos/Perry the Platypus saying _spec spec spec_ but it goes on for much longer.mp4#t=0.5">
+                    </video>
+                </a>
+                
+            </div>
             <nav>
                 <section>
                     <form name="miformulario" id="miformulario" method="get">
@@ -65,4 +68,7 @@
         
     </body>
 </html>
-    
+    <!--
+        <track kind="subtitles" src="../otros/subtitulos.vtt" lang="es" label="Español" default>
+        <track kind="subtitles" src="../otros/subtitulos.vtt" lang="en" label="Inglés">
+    -->

@@ -83,3 +83,15 @@ footer{
     display:inline-block;
     margin-top: 25px;
 }
+#video-colection {
+    
+}
+#video-colection .video-list {
+    width: 275px;
+    height: 56.25%;
+    border: black solid 1px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
