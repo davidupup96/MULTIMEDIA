@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Reproductor de video interactivo</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="../recursos/mano.ico">
+        <script src="../js/reproductor.js"></script>
+        <script src="../js/videoSelectorManager.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/reproductor.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Mi reproductor de video</h1>
+            <ul>
+                <li><a href="index.html">reproductor de video</a></li>
+                <li><a href="videoInternet.html">reproductor en internet</a></li>
+        </header>
+        <div class="iframewrapper">
+            <section class="videoIframeWrapper">
+                <a href="#">
+                    <iframe id="videoUrl"  src="https://www.youtube.com/embed/tYjhHuY-kHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </a>
+                
+            </section>
+            <form name="miformulario" id="miformulario" method="get">
+                <input type="url" name="miurl" id="miurl"> 
+                <input type="submit" value="Buscar en YouTube" ac>
+                
+            </form>
+        </div>
+        <footer>
+            <ul class="logos">
+                <li>
+                    <a href="https://esi.uclm.es" target="_blank"><img src="../recursos/logos/logoesi.jpg" alt="Logo esi" tittle="ESI UCLM" height="150px" width="475px"> </a>
+                </li>
+                <li>
+                    <a href="https://www.uclm.es" target="_blank"><img src="../recursos/logos/logouclm.jpg" alt="Logo esi" tittle="UCLM" height="150px" width="240"> </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

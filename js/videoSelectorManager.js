@@ -13,6 +13,14 @@ videoSelectoManagerJS={
     }
 
 
+   /* playYoutubeVideo: function(replaceUrl){
+        var videoUrl = document.getelementbyid('videoUrl');
+        var replacementUrl = document.getElementById('miurl');
+        videoUrl.setAttribute('src', replacementUrl);
+        
+             
+    }*/
+
 }
 
 

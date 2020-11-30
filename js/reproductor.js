@@ -7,7 +7,7 @@ function iniciar() {
     progreso=document.getElementById('progreso');
    
     // esto permite escuchar los eventos que se realicen a lo largo de la interaccion
-    reproducir.addEventListener('click', presionar, false);
+    
     barra.addEventListener('click', mover, false);
 
     //bucle=setInterval(asesina, 1100);
@@ -58,4 +58,3 @@ function mover(e){
 
 window.addEventListener('load', iniciar, false);
 //como hacemos para añadir subtitulos,
-//

@@ -11,6 +11,10 @@
     <body>
         <header>
             <h1>Mi reproductor de video</h1>
+            <ul>
+                <li><a href="index.html">reproductor de video</a></li>
+                <li><a href="videoInternet.html">reproductor en internet</a></li>
+            </ul>
         </header>
         <div class="wrapper">
             
@@ -34,26 +38,6 @@
                 </a>
                 
             </div>
-            <nav>
-                <section>
-                    <form name="miformulario" id="miformulario" method="get">
-                        <input type="url" name="miurl" id="miurl"> 
-                        <input type="submit" value="Buscar en YouTube">
-                    </form>
-                </section> 
-                <div id ="botones">
-                    <button type="button" id="reproducir">Reproducir</button>
-                    <form name="formulario" method="post" action="../../form-result.php" enctype="multipart/form-data">
-                        
-                        <input type="file" name="VideoAReproducirr" accept="video/.mp4" multiple />
-                    </form>
-                    <!--<button type="button" id="asesinar">Asesinar</button>-->
-                </div>
-                <div id="barra">
-                    <div id="progreso"></div>
-                </div>
-                <div style="clear: both"></div> 
-            </nav>
         </div>
         <footer>
             <ul class="logos">

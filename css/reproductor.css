@@ -29,6 +29,29 @@ body{
     width: 100%;
 }
 
+.iframewrapper {
+    
+    margin: 0 auto;
+    width: 1000px;
+}
+.videoIframeWrapper{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: 10px;
+}
+
+.videoIframeWrapper iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
 header{
     display: block;
     font-size: 5 em;
@@ -83,9 +106,7 @@ footer{
     display:inline-block;
     margin-top: 25px;
 }
-#video-colection {
-    
-}
+
 #video-colection .video-list {
     width: 275px;
     height: 56.25%;
