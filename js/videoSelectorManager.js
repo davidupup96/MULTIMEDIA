@@ -13,18 +13,6 @@ videoSelectoManagerJS={
     }
 
 
-    /*playYoutubeVideo: function(){
-        var videoReemplazo = document.getElementById('miurl')
-        var videoReproducido = document.getelementbyid('videoReproducido');
-        var replacementUrl = videoReemplazo.getAttribute(value)
-        videoReproducido.setAttribute('src', replacementUrl);
-        
-             
-    }
-    /*function cambiar_video(){
-        var 
-    }*/
-
 }
 urlSelectorManagerJS={
     playYoutubeVideo: function(){
