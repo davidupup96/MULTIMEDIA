@@ -13,14 +13,26 @@ videoSelectoManagerJS={
     }
 
 
-    playYoutubeVideo: function(replaceUrl){
-        var videoUrl = document.getelementbyid('videoUrl');
-        var replacementUrl = document.getElementById('miurl');
-        videoUrl.setAttribute('src', replacementUrl);
+    /*playYoutubeVideo: function(){
+        var videoReemplazo = document.getElementById('miurl')
+        var videoReproducido = document.getelementbyid('videoReproducido');
+        var replacementUrl = videoReemplazo.getAttribute(value)
+        videoReproducido.setAttribute('src', replacementUrl);
         
              
     }
+    /*function cambiar_video(){
+        var 
+    }*/
 
+}
+urlSelectorManagerJS={
+    playYoutubeVideo: function(){
+        var videoReemplazo = document.getElementById('miurl')
+        var videoReproducido = document.getelementbyid('videoReproducido');
+        var replacementUrl = videoReemplazo.getAttribute(value)
+        videoReproducido.setAttribute('src', replacementUrl);
+    }
 }
 
 

@@ -15,19 +15,21 @@
                 <ul id="navigation">
                     <li><a href="index.html">reproductor de video</a></li>
                     <li><a href="videoInternet.html">reproductor en internet</a></li>
+                    <li><a href="videosInteractivos.html"> Reproductor de videos interactivos </a></li>
                 </ul>
             </nav>
         </header>
         <div class="iframewrapper">
             <section class="videoIframeWrapper">
-                <a href="#">
-                    <iframe id="videoUrl"  src="https://www.youtube.com/embed/tYjhHuY-kHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <a href="#" >
+                    <iframe id="videoReproducido"  src="https://www.youtube.com/embed/tYjhHuY-kHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </a>
                 
             </section>
             <form name="miformulario" id="miformulario" method="get">
                 <input type="url" name="miurl" id="miurl"> 
-                <input type="submit" value="Buscar en YouTube" ac>
+                
+                <button onclick="urlSelectorManagerJS.playYoutubeVideo()">buscar en youtube</button>
                 
             </form>
         </div>
@@ -43,3 +45,6 @@
         </footer>
     </body>
 </html>
+<!--
+    document.getElementById('videoReproducido').src='miurl'
+-->

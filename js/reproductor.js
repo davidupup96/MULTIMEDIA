@@ -1,60 +1,35 @@
+var global=true;
 function iniciar() {
-    maximo=600;
     //Esto permite almacenar las variables usadas en HTML
-    //medio=document.getElementById('medio');
-    //reproducir=document.getElementById('reproducir');
-    //barra=document.getElementById('barra'); 
-    //progreso=document.getElementById('progreso');
+    //medio=document.getElementById('mainVideo');
+    //if(mainVideo.currentTime>2){
+    //mainVideo.currentTime=0;
+    //}
    
-    //Esto permite escuchar los eventos que se realicen a lo largo de la interaccion
+    //con esta funcion ejecuta un bucle eterno
     
-    //barra.addEventListener('click', mover, false);
-
-    //bucle=setInterval(asesina, 1100);
+    bucle=setInterval(cronos, 1);
+    //clearInterval(bucle);
 }
+function cronos(){
+    if(global==true){
+        if(mainVideo.currentTime>2){
+        mainVideo.currentTime=0;
+        }
 
-function presionar(){
-    if(!medio.paused && !medio.ended) {
-        medio.pause();
-        reproducir.innerHTML='Reproducir';
-        window.clearInterval(bucle);
-    }else{
-        medio.play();
-        reproducir.innerHTML='Pausa';
-        bucle=setInterval(estado, 1000);
     }
 }
-
-function estado(){
-    if(!medio.ended){
-        var total=parseInt(medio.currentTime*maximo/medio.duration);
-        progreso.style.width=total+'px';
-    }else{
-        progreso.style.width='0px';
-        reproducir.innerHTML='Reproducir';
-        window.clearInterval(bucle);
-    }
+function asesina(){
+    global=false;
+    //mainVideo.currentTime=3;
 }
-
-function mover(e){
-    if(!medio.paused && !medio.ended){
-        var ratonX=e.pageX-barra.offsetLeft;
-        var nuevoTiempo=ratonX*medio.duration/maximo;
-        medio.currentTime=nuevoTiempo;
-        progreso.style.width=ratonX+'px';
-    }
-}
-
- function asesina(){
-    if(medio.currentTime>3){
-        medio.currentTime=medio.currentTime-1;
-    }
- }
 //esta funcion permite coger la url de youtube
- function youtube(){
-
-
- }
-
+/*function playYoutubeVideo(){
+    var videoReemplazo = document.getElementById('miurl')
+    var videoReproducido = document.getelementbyid('videoReproducido');
+    var replacementUrl = videoReemplazo.getAttribute(value)
+    videoReproducido.setAttribute('src', replacementUrl);
+    
+}*/
 window.addEventListener('load', iniciar, false);
 //como hacemos para añadir subtitulos,
