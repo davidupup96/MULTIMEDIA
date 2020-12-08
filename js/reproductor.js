@@ -1,14 +1,14 @@
 function iniciar() {
     maximo=600;
-    // esto permite almacenar las variables usadas en HTML
-    medio=document.getElementById('medio');
-    reproducir=document.getElementById('reproducir');
-    barra=document.getElementById('barra'); 
-    progreso=document.getElementById('progreso');
+    //Esto permite almacenar las variables usadas en HTML
+    //medio=document.getElementById('medio');
+    //reproducir=document.getElementById('reproducir');
+    //barra=document.getElementById('barra'); 
+    //progreso=document.getElementById('progreso');
    
-    // esto permite escuchar los eventos que se realicen a lo largo de la interaccion
+    //Esto permite escuchar los eventos que se realicen a lo largo de la interaccion
     
-    barra.addEventListener('click', mover, false);
+    //barra.addEventListener('click', mover, false);
 
     //bucle=setInterval(asesina, 1100);
 }

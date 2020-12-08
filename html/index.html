@@ -26,6 +26,11 @@
             <div id="video-colection">
                 <a href="#" onclick="videoSelectoManagerJS.playThisVideo('video1')">
                     <video id="video1" class="video-list"  src="../recursos/videos/Video.mp4#t=0.5">
+                        <script>
+                            if(medio.currentTime>3){
+                                medio.currentTime=medio.currentTime-1;
+                            }
+                        </script>
                     </video>
                 </a>
                 <a href="#" onclick="videoSelectoManagerJS.playThisVideo('video2')">
@@ -55,4 +60,6 @@
     <!--
         <track kind="subtitles" src="../otros/subtitulos.vtt" lang="es" label="Español" default>
         <track kind="subtitles" src="../otros/subtitulos.vtt" lang="en" label="Inglés">
+            http://www.manualweb.net/html/mapas-html/
+            https://www.hazunaweb.com/curso-de-html/mapas-de-imagenes/
     -->
