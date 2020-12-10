@@ -13,8 +13,8 @@ function iniciar() {
 }
 function cronos(){
     if(global==true){
-        if(mainVideo.currentTime>2){
-        mainVideo.currentTime=0;
+        if(mainVideo.currentTime>1.5){
+        mainVideo.currentTime=0.5;
         }
 
     }
