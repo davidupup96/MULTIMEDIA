@@ -33,6 +33,11 @@ body{
     width: 100%;
 }
 
+.i-wrapper{
+    margin: 0 auto;
+    width: 63em;
+}
+
 .interactive-wrapper {
     position: relative;
     padding-bottom: 56.25%;
@@ -49,6 +54,9 @@ body{
     height: 100%;
     width: 100%;
 }
+
+
+
 
 .iframewrapper {
     
@@ -100,7 +108,7 @@ header{
     border: none;
 }
 #navigation {
-    font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 #navigation li{
@@ -121,26 +129,7 @@ header{
     background-color: #368DF8;
 }
 
-#botones{
-    float: left;
-    width: 100px;
-    height: 20px;
-}
-#barra{
-    position: relative;
-    float: left;
-    width: 600px;
-    height: 16px;
-    padding: 2px;
-    border: 1px solid #CCCCCC;
-    background: #EEEEEE;
-}
-#progreso{
-    position: absolute;
-    width: 0px;
-    height: 16px;
-    background: rgba(0,0,150,.2);
-}
+
 footer{
     position: absolute;
     color:black;
@@ -162,3 +151,69 @@ footer{
     margin-left: 5px;
     margin-right: 5px;
 }
+.longBtns{
+    display: block;
+}
+/*
+#botones{
+    float: left;
+    width: 100px;
+    height: 20px;
+}
+#barra{
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 16px;
+    padding: 2px;
+    border: 1px solid #CCCCCC;
+    background: #EEEEEE;
+}
+#progreso{
+    position: absolute;
+    width: 0px;
+    height: 16px;
+    background: rgba(0,0,150,.2);
+}
+#box1{
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    left: 0;
+    top: 250px;
+    background-color:rgba(247, 249, 249, 0.8) ;
+}
+
+#box2 {
+    height: 70px;
+    width: 40%;
+    top: 340px;
+    left: 80px;
+    position:absolute;
+    background-color: rgba(192,35,43,.8);
+}
+#box3 {
+    height: 70px;
+    width: 40%;
+    top: 340px;
+    right: 80px;
+    position:absolute;
+    background-color: rgba(40,116,166,.8);
+}
+#box4 {
+    height: 70px;
+    width: 40%;
+    top: 450px;
+    left: 80px;
+    position:absolute;
+    background-color: rgba(30,162,73,.8);
+}
+#box5 {
+    height: 70px;
+    width: 40%;
+    top: 450px;
+    right: 80px;
+    position:absolute;
+    background-color: rgba(241,196,15,.8);
+}
+*/

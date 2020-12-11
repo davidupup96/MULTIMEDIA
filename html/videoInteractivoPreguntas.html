@@ -4,9 +4,10 @@
         <title>Reproductor de video interactivo</title>
         <meta charset="utf-8">
         <link rel="icon" href="../recursos/mano.ico">
-        <script src="../js/reproductor.js"></script>
+        <script src="../js/preguntas.js"></script>
         <script src="../js/videoSelectorManager.js"></script>
         <link rel="stylesheet" type="text/css" href="../css/reproductor.css" />
+        <script language="JavaScript" type="text/javascript" src="../js/preguntas.js"></script>
     </head>
     <body>
         <header>
@@ -15,25 +16,28 @@
                 <ul id="navigation">
                     <li><a href="index.html">Reproductor de video</a></li>
                     <li><a href="videoInternet.html">Reproductor en internet</a></li>
-                    <li><a href="videosInteractivoBucle.html">Reproductor Bucle</a></li>
+                    <li><a href="videoInteractivoBucle.html">Reproductor Bucle</a></li>
                     <li><a href="videoInteractivoPreguntas.html">Reproductor con Preguntas</a></li>
                 </ul>
             </nav>
         </header>
-        <div class="iframewrapper">
-            <section class="videoIframeWrapper">
-                <a href="#" >
-                    <iframe id="videoReproducido"  src="https://www.youtube.com/embed/tYjhHuY-kHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </a>
+        <div class="i-wrapper">
+            
+            <div class="interactive-wrapper" >
                 
-            </section>
-            <form name="miformulario" id="miformulario" method="get">
-                <input type="url" name="miurl" id="miurl"> 
-                
-                <button onclick="urlSelectorManagerJS.playYoutubeVideo()">buscar en youtube</button>
-                
-            </form>
+                <video controls id="mainVideo" src="../recursos/videos/Perry the Platypus saying _spec spec spec_ but it goes on for much longer.mp4">
+                    your video doesn't suppor the video type.
+                </video>
+            </div>
         </div>
+        <div class="Pregunta1">
+            <h4>Pregunta 1</h4>
+            <p>¿Quien es realmente Dr. Wexler?</p>
+            <br>
+            <a href="#" class="button longBtns">un ornitorrinco</a>
+            <a href="#" class="button longBtns">PERRY EL ORNITORRINCO</a>
+        </div>
+
         <footer>
             <ul class="logos">
                 <li>
@@ -47,5 +51,10 @@
     </body>
 </html>
 <!--
-    document.getElementById('videoReproducido').src='miurl'
+                <div id="box1"></div>
+                <div id="box2"></div>
+                <div id="box3"></div>
+                <div id="box4"></div>
+                <div id="box5"></div>
+                
 -->
