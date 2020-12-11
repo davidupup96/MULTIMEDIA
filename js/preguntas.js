@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-    video1=$('#video1');
+    video1=$('#mainVideo');
     $('.box1').on('click',function(){
         playpausevideo('.Pregunta1');
     });
