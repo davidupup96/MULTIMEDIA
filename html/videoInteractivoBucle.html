@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Reproductor de video interactivo</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="../recursos/mano.ico">
+        <script src="../js/reproductor.js"></script>
+        <script src="../js/videoSelectorManager.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/reproductor.css" />
+        <script language="JavaScript" type="text/javascript" src="../js/reproductor.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Mi reproductor de video</h1>
+            <nav class="nav-bar">
+                <ul id="navigation">
+                    <li><a href="index.html">Reproductor de video</a></li>
+                    <li><a href="videoInternet.html">Reproductor en internet</a></li>
+                    <li><a href="videosInteractivoBucle.html">Reproductor Bucle</a></li>
+                    <li><a href="videoInteractivoPreguntas.html">Reproductor con Preguntas</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        
+        <div class="i-wrapper">
+            
+            <div class="interactive-wrapper" >
+                
+                <video controls id="mainVideo" src="../recursos/videos/Video.mp4">
+                    your video doesn't suppor the video type.
+                </video>
+                
+                
+            </div>
+            <input type="button" id="Asesinar" name="Asesina" onclick="asesina();" value="mata al vampiro">
+            
+        </div>
+        <footer>
+            <ul class="logos">
+                <li>
+                    <a href="https://esi.uclm.es" target="_blank"><img src="../recursos/logos/logoesi.jpg" alt="Logo esi" tittle="ESI UCLM" height="150px" width="475px"> </a>
+                </li>
+                <li>
+                    <a href="https://www.uclm.es" target="_blank"><img src="../recursos/logos/logouclm.jpg" alt="Logo esi" tittle="UCLM" height="150px" width="240"> </a>
+                </li>
+            </ul>
+        </footer>
+
+    </body>
+</html>
+    <!--
+        <track kind="subtitles" src="../otros/subtitulos.vtt" lang="es" label="Español" default>
+        <track kind="subtitles" src="../otros/subtitulos.vtt" lang="en" label="Inglés">
+            http://www.manualweb.net/html/mapas-html/
+            https://www.hazunaweb.com/curso-de-html/mapas-de-imagenes/
+    -->

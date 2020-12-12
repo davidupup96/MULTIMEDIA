@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Reproductor de video interactivo</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="../recursos/mano.ico">
+        <script src="../js/preguntas.js"></script>
+        <script src="../js/videoSelectorManager.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/reproductor.css" />
+        <script language="JavaScript" type="text/javascript" src="../js/preguntas.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Mi reproductor de video</h1>
+            <nav class="nav-bar">
+                <ul id="navigation">
+                    <li><a href="index.html">Reproductor de video</a></li>
+                    <li><a href="videoInternet.html">Reproductor en internet</a></li>
+                    <li><a href="videoInteractivoBucle.html">Reproductor Bucle</a></li>
+                    <li><a href="videoInteractivoPreguntas.html">Reproductor con Preguntas</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="i-wrapper">
+            
+            <div class="interactive-wrapper" >
+                
+                <video controls id="mainVideo" src="../recursos/videos/Perry the Platypus saying _spec spec spec_ but it goes on for much longer.mp4">
+                    your video doesn't suppor the video type.
+                </video>
+            </div>
+            <div class="pregunta1">
+                <h4 id="box1"> ¿Quien es realmente Dr. Wexler?</h4>
+                <input type="button" id="box2" name="ORNITORRINCO" onclick="ornitorrinco()" value="Un ornitorrinco">
+                <input type="button" id="box3" name="PERRY EL ORNITORRINCO" onclick="perryElOrnitorrinco()" value="PERRY EL ORNITORRINCO">
+            </div>
+            <div class="pregunta2">
+                <h4 id="box4"> ¿Como se llama la conveccion?</h4>
+                <input type="button" id="box5" name="EVIL-CON" onclick="correcta()" value="EVIL-CON">
+                <input type="button" id="box6" name="COMIC-CON" onclick="falsa()" value="COMIC-CON">
+                <input type="button" id="box7" name="MARI-CON" onclick="falsa()" value="MARI-CON">
+                <input type="button" id="box8" name="PUT-ON" onclick="falsa()" value="PUT-ON">
+            </div>
+        </div>
+        
+
+        <footer>
+            <ul class="logos">
+                <li>
+                    <a href="https://esi.uclm.es" target="_blank"><img src="../recursos/logos/logoesi.jpg" alt="Logo esi" tittle="ESI UCLM" height="150px" width="475px"> </a>
+                </li>
+                <li>
+                    <a href="https://www.uclm.es" target="_blank"><img src="../recursos/logos/logouclm.jpg" alt="Logo esi" tittle="UCLM" height="150px" width="240"> </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
+<!--
+               
+                
+-->
